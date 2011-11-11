@@ -2,6 +2,7 @@ package
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
+	
 	/**
 	 * ...
 	 * @author ifany
@@ -19,14 +20,15 @@ package
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
-			graphics.lineStyle(1, 0, 1);
-			addEventListener(Event.ENTER_FRAME,onEnterFrame);
-			
+			try {
+			    trace("This code is about to throw an error.");
+				throw new Error("A general error occurred.");
+				trace("this line won't run");
+			}catch (errObject:Error) {
+			    trace("The catch block has been called.");
+				trace("The message is:" + errObject.message);
+			}
 		}
-		private function onEnterFrame(event:Event):void {
-		    graphics.lineTo(Math.random()*400,Math.random()*400);
-		}
-		
 		
 	}
 	

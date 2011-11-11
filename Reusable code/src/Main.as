@@ -2,6 +2,7 @@ package
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
+	
 	/**
 	 * ...
 	 * @author ifany
@@ -19,14 +20,15 @@ package
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
-			graphics.lineStyle(1, 0, 1);
-			addEventListener(Event.ENTER_FRAME,onEnterFrame);
-			
+			for (var i:int = 0; i < 10;i++ ) {
+			   	drawLine();
+			}
 		}
-		private function onEnterFrame(event:Event):void {
-		    graphics.lineTo(Math.random()*400,Math.random()*400);
+		private function drawLine():void {
+		    graphics.lineStyle(1, Math.random() * 0xffffff, 1);
+			graphics.moveTo(Math.random() * 400, Math.random() * 400);
+			graphics.lineTo(Math.random()*400,Math.random()*400);
 		}
-		
 		
 	}
 	
