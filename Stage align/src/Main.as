@@ -2,7 +2,8 @@ package
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
-	
+	import flash.display.StageScaleMode;
+	import flash.display.StageAlign;
 	/**
 	 * ...
 	 * @author ifany
@@ -20,6 +21,11 @@ package
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.align = StageAlign.TOP_RIGHT;
+			graphics.beginFill(0xff0000);
+			graphics.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
+			graphics.endFill();
 		}
 		
 	}
