@@ -21,7 +21,7 @@ package
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
-			graphics.lineStyle(2, 0xFFCC33);
+			graphics.lineStyle(2, 0x000000);
 			_drawing = false;
 			stage.addEventListener(MouseEvent.MOUSE_DOWN, startDrawing);
 			stage.addEventListener(MouseEvent.MOUSE_MOVE, draw);
