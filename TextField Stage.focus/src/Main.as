@@ -23,22 +23,26 @@ package
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			// entry point
 			var field:TextField = new TextField();
-			field.border = true;
-			field.background = true;
+			//field.border = true;
+			//field.background = true;
+			stage.focus = field;
+			field.text = "this is example text";
+			field.setSelection(0, 4);
+			//field.setSelection(6,6)
 			addChild(field);
-			var button:Sprite = new Sprite();
-			button.graphics.lineStyle();
-			button.graphics.beginFill(0xffffff);
-			button.graphics.drawRect(0, 0, 100, 50);
-			button.graphics.endFill();
-			button.addEventListener(MouseEvent.CLICK, onClick);
-			button.y = 100;
-			addChild(button);
+			//var button:Sprite = new Sprite();
+			//button.graphics.lineStyle();
+			//button.graphics.beginFill(0xffffff);
+			//button.graphics.drawRect(0, 0, 100, 50);
+			//button.graphics.endFill();
+			//button.addEventListener(MouseEvent.CLICK, onClick);
+			//button.y = 100;
+			//addChild(button);
 		}
-		private function onClick(event:MouseEvent):void {
-		    stage.focus = TextField(getChildAt(0));
+		//private function onClick(event:MouseEvent):void {
+		   // stage.focus = TextField(getChildAt(0));
 			//stage.fucus = null;
-		}
+		//}
 		
 	}
 	
