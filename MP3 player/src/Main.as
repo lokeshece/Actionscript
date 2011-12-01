@@ -135,49 +135,5 @@ package
 	}
 	
 }
-//"helper classes"
-	import flash.display.Bitmap;
-	import flash.display.BitmapData;
-	import flash.display.Sprite;
-	import flash.events.Event;
-	import flash.events.MouseEvent;
-	import flash.filters.DropShadowFilter;
-	import flash.geom.Rectangle;
-	import flash.media.SoundMixer;
-	import flash.utils.ByteArray;
-	class playButton extends Sprite
-	{
-		
-		public function playButton() 
-		{
-			//Draw the play/pause graphic
-			graphics.beginFill(0xcccccc);
-			graphics.drawRoundRect(0, 0, 20, 16, 4, 4);
-			graphics.endFill();
-			graphics.beginFill(0x333333);
-			graphics.moveTo(4, 4);
-			graphics.lineTo(8, 8);
-			graphics.lineTo(4, 12);
-			graphics.lineTo(4, 4);
-			graphics.drawRect(10, 4, 4, 8);
-			graphics.drawRect(14, 4, 2, 8);
-			graphics.endFill();	
-		}
-		
-	}
-	Class SpectrumGraph extends Sprite {
-	    public function SpectrumGraph() {
-		
-		}
-	}
-	Class VolumeControl extends Sprite {
-	    public function VolumeControl() {
-		
-		}
-	}
-	Class PanControl extends Sprite {
-	    public function PanControl() {
-		
-		}
-	}
+
 	
