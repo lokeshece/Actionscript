@@ -1,0 +1,1 @@
+someText=ActionScript+3.0+Cookbook&someNumber=3
