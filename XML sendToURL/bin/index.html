@@ -6,26 +6,7 @@
 	<meta name="description" content="" />
 	
 	<script src="js/swfobject.js"></script>
-	<script>
-		var flashvars = {
-		};
-		var params = {
-			menu: "false",
-			scale: "noScale",
-			allowFullscreen: "true",
-			allowScriptAccess: "always",
-			bgcolor: "",
-			wmode: "direct" // can cause issues with FP settings & webcam
-		};
-		var attributes = {
-			id:"XMLsendToURL"
-		};
-		swfobject.embedSWF(
-			"XMLsendToURL.swf", 
-			"altContent", "100%", "100%", "10.0.0", 
-			"expressInstall.swf", 
-			flashvars, params, attributes);
-	</script>
+	
 	<style>
 		html, body { height:100%; overflow:hidden; }
 		body { margin:0; }
@@ -36,5 +17,6 @@
 		<h1>XML sendToURL</h1>
 		<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
 	</div>
+	<object type="application/x-shockwave-flash" data="XMLsendToURL.swf" width="600" height="600"></object>
 </body>
 </html>

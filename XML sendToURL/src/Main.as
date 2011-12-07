@@ -81,7 +81,7 @@ package
 			                        <username>{_username.text}</username>
 									<score>{score}</score>
 			                     </gamescore>
-			var request:URLRequest = new URLRequest("php/gamescore.php");
+			var request:URLRequest = new URLRequest("coldfusion/gamescores.cfm");
 			request.data = dataToSave;
 			request.contentType = "text/xml";
 			request.method = URLRequestMethod.POST;

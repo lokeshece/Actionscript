@@ -9,6 +9,7 @@ package
 	 * ...
 	 * @author ifany
 	 */
+	[SWF(width="400",height="300",backgroundColor="0xff0000",frameRate="31")]
 	public class Main extends Sprite 
 	{
 		private var _sound:Sound;
