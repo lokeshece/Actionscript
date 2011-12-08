@@ -3,6 +3,7 @@ package
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.net.LocalConnection;
+	import flash.text.TextField;
 	
 	/**
 	 * ...
@@ -10,7 +11,7 @@ package
 	 */
 	public class Main extends Sprite 
 	{
-		
+	    private var _output:TextField;	
 		public function Main():void 
 		{
 			if (stage) init();
